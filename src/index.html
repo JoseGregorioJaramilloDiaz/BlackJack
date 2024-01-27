@@ -3,14 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPack</title>
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assests/css/styles.css"> -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
-    <!-- comentario -->
-    <!-- comentario -->
-    <!-- comentario -->
-    <img src="assets/img/webpack-logo.png" alt="Webpack logo" srcset="">
+    <header class="titulo">Black Jack</header>
 
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small></h1>
+            <div id="jugador-cartas" class="divCartas">
+                <!-- <img class="carta" src="./assests/imagenes/10C.png" alt="" srcset=""> -->
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>Computadora - <small>0</small></h1>
+            <div id="computadora-cartas" class="divCartas">
+                <!-- <img class="carta" src="./assests/imagenes/2S.png" alt="" srcset=""> -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <script src="assests/js/underscore-min.js"></script> -->
+    <script src="./assests/js/underscore-min.js"></script>
+    <!-- <script src="assests/js/juego-min.js"></script> -->
+    <script src="./assests/js/juego-min.js"></script>
+    <script>
+
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+            miModulo.nuevoJuego();
+        })
+        
+    </script>
 </body>
 </html>
