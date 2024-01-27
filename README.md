@@ -1,9 +1,9 @@
-# WebPack Starter
+# Juego BlackJack
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack
+Este es el proyecto sobre el Juego de BlackJack o 21
 
 ### Notas:
-Recuerdemn reconstruir los modulos de Node
+Recuerde reconstruir los modulos de Node
 
 ```
 npm install
